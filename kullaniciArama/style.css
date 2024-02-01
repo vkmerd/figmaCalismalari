@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.devfinderApi{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.finderTextMode{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.textFinder p{
+    color: #222731;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.textFinder {
+    display: flex;
+    align-items: center;
+}
+.mode {
+    display: flex;
+    gap: 10px;
+}
+
+.mode p{
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+}
+.search{
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+
+}
+
+.search input{
+    width: 96%;
+        padding: 20px;
+    border: none;
+}
+input::placeholder{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 5%;
+}
+
+.search button{
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    padding: 10px;
+    width: 100px;
+    height: 90%;
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background: #0079FF;
+    color: #FFF;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-right: 5%;
+}
+.search-icon {
+    position: absolute;
+    left: 0px;
+    top: 14px;
+    padding-left: 2%;
+}
+
+.apiContainer{
+    width: 100%;
+    height: 40vh;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.containerApi{
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+.containerImg{
+    width: 30%;
+}
+.containerImg img{
+    width: 70%;
+    height: 145px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+}
+
+.contDashboard{
+    width: 65%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.username{
+    color: #2B3442;
+    font-family: "Space Mono";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.date{
+    color: #697C9A;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bio{
+    margin-bottom: 30px;
+}
+.bio p{
+color: #4B6A9B;
+font-family: "Space Mono";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 166.667% */
+}
+.repoInfo{
+    width: 100%;
+    height: 10vh;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border-radius: 10px;
+    background: #F6F8FF;
+}
+
+.repoContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.repos{
+    display: flex;
+    flex-direction: column;
+}
+
+.repos h2{
+    margin-bottom: 10px;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.followers h2{
+    margin-bottom: 10px;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.following h2{
+    margin-bottom: 10px;
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.repoNumber{
+    color: #2B3442;
+font-family: "Space Mono";
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+.followNumber{
+    color: #2B3442;
+font-family: "Space Mono";
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+.followingNumber{
+    color: #2B3442;
+font-family: "Space Mono";
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.githubInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 15px;
+    gap: 20px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.locationText{
+    color: #4B6A9B;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.githubLink{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gitHUB{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

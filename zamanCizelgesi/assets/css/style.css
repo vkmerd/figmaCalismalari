@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #0E1323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeouts{
+    width: 75%;
+    height: 75vh;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    width: 25%;
+    height: 80%;
+    background: #1C204B;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.user{
+    width: 100%;
+    height: 50%;
+    border-radius: 15px;
+    background: #5747EA;
+    padding: 40px 40px 80px 32px;
+}
+
+.name {
+    display: block;
+    padding: 32px 80px 80px 0px;
+}
+.user img {
+    border-radius: 50%;
+}
+.report {
+    color: #BBC0FF;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.userName {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.timeSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.timeWeek{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.timeWeek p{
+    color: #ffffff;
+    font-family: 'Rubik';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.mainTimes{
+    width: 65%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.timeCard {
+    width: 255px;
+    height: 199px;
+    flex-shrink: 0;
+}
+.arkaPlan {
+    position: absolute;
+    z-index: 1;
+}
+.mainCardFooter{
+    padding: 26px 0px 32px 32px;
+    display: inline-flex;
+    padding-bottom: 1px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+}
+.cardHeaders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 35px 25px 30px;
+    img{
+        width: 16px;
+        height: 5px;
+    }
+    p{
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.cards{
+    width: 255px;
+    height: 199px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #1C204B;
+    margin-top: 45px;
+    position: absolute;
+    z-index: 2;
+}
+.bigHour {
+    color: #FFF;
+    font-size: 56px;
+    font-weight: 300;
+}
+.cardFooters {
+    padding: 0px 35px 32px 30px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+.smallHour {
+    color: #BBC0FF;
+    font-size: 15px;
+    font-weight: 400;
+}

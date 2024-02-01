@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Interactive Comments Section</title>
+</head>
+<body>
+    <div class="container">
+        <div class="comments-div">
+            <div class="rating-box">
+                <button class="like-button plus">+</button>
+                <span class="like-counter">12</span>
+                <button class="like-button minus">-</button>
+            </div>
+            <div class="comment-container">
+                <div class="profile-container">
+                    <div class="profile">
+                        <img class="profile-pic" src="assets/img/amyrobson.png" alt="">
+                        <span class="name">amyrobson</span>
+                        <span class="created-time">1 month ago</span>
+                    </div>
+                    <button class="reply">
+                        <img src="assets/img/reply.svg" alt="">
+                        <span>
+                            Reply
+                        </span> 
+                    </button>
+                </div>
+                <p class="comment">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You’ve nailed the design and the responsiveness at various breakpoints works really well.</p>
+            </div>
+        </div>
+
+        <div class="reply-div user-reply">
+            <div class="stick"></div>
+            <div class="comments-div">
+                <div class="rating-box">
+                    <button class="like-button">+</button>
+                    <span class="like-counter">12</span>
+                    <button class="like-button">-</button>
+                </div>
+                <div class="comment-container">
+                    <div class="profile-container">
+                        <div class="profile">
+                            <img class="profile-pic" src="assets/img/juliusomo.png" alt="">
+                            <span class="name">juliusomo</span>
+                            <span class="you">you</span>
+                            <span class="created-time">2 days ago</span>
+                        </div>
+                        <div class="button-container">
+                            <button class="delete">
+                                <img src="assets/img/delete.svg" alt="">
+                                Delete</button>
+                            <button class="edit">
+                                <img src="assets/img/edit.svg" alt="">
+                                Edit</button>
+                        </div>
+                    </div>
+                    <p class="comment">
+                        <span class="which-comment-owner">@ramsesmiron </span>
+                        I couldn’t agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <form action="" id="form">
+            <img src="assets/img/juliusomo.png" alt="">
+            <textarea name="textarea" id="comment" placeholder="Add a comment..." maxlength="500"></textarea>
+            <button class="send-btn" id="send">SEND</button>
+        </form>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
